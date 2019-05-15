@@ -1,0 +1,45 @@
+{
+  "name": "@gyumeijie/wgit",
+  "version": "1.0.0",
+  "description": "use git to upload, delete, update files without requiring a local git repository",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --watch --info-verbosity verbose --config webpack.config.js"
+  },
+  "bin": {
+    "wgit": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gyumeijie/wgit.git"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "uplaod-files",
+    "delete-files",
+    "update-files"
+  ],
+  "author": "gyumeijie <18170879819@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gyumeijie/wgit/issues"
+  },
+  "homepage": "https://github.com/Gyumeijie/wgit#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@octokit/rest": "^16.25.5",
+    "argparse": "^1.0.10",
+    "clean-webpack-plugin": "^2.0.2",
+    "recursive-readdir": "^2.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.3",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "write-to-file-webpack": "^1.0.6"
+  }
+}
